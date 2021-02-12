@@ -1,0 +1,26 @@
+{
+  "name": "psam-dashboard",
+  "version": "1.0.0",
+  "description": "Dashboard for Post School Access Map",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://kgmofokeng@bitbucket.org/wtc5c/psam-dashboard.git"
+  },
+  "keywords": [
+    "psam"
+  ],
+  "author": "Kgomotso Mofokeng",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/wtc5c/psam-dashboard#readme",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "firebase": "^4.6.2",
+    "jquery": "^3.2.1",
+    "knockout": "^3.4.2",
+    "knockout-mapping": "^2.6.0"
+  }
+}

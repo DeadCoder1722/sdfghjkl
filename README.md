@@ -1,2 +1,1 @@
-# psam-dashboard
-Post School Access Map Dashboard
+# Post School Access Map Dashboard

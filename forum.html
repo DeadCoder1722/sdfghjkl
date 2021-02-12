@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css"/>
+        <link rel="stylesheet" href="www/Styles/main.css"/>
+        <link rel="stylesheet" href="www/Styles/sidebar.css"/>
+        <script src="node_modules/firebase/firebase.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase-firestore.js"></script>
+    </head>
+    <body>
+        <div class="wrapper">
+            <!-- Sidebar Holder -->
+            <nav id="sidebar">
+                <br/><br/>
+                <div class="sidebar-header text-center">
+                    <h3>Post School Access Map</h3>
+                    <strong>PSAM</strong>
+                </div>
+
+                <ul class="list-unstyled components">
+                    <li class="active">
+                        <a href="index.html">
+                            <i class="glyphicon glyphicon-home"></i>
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./pamap.html">
+                            <i class="glyphicon glyphicon-briefcase"></i>
+                            PSAM
+                        </a>
+                        <a href="forum.html">
+                            <i class="glyphicon glyphicon-duplicate"></i>
+                            Forum
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- Page Content Holder -->
+            <div id="content">
+
+                <nav class="navbar navbar-default">
+                    <div class="container-fluid">
+
+                        <div class="navbar-header">
+                        </div>
+
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav navbar-right">
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <div class="spacer-small"></div>
+                <div class="content">
+                    <div class="content-display">
+                        <div class="message-board" id="displayArea"></div>
+                        <div class="input-group communication-footer">
+                            <input type="text" class="form-control" id="inputMessage">
+                            <span class="input-group-btn">
+                                <button class="btn btn-default" id="btnSend">
+                                    <i class="glyphicon glyphicon-send"></i>
+                                </button>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sidebar_toggle-container">
+                <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
+                    <i class="glyphicon glyphicon-align-left"></i>
+                </button>
+            </div>            
+        </div>
+
+        <script src="www/Libraries/jquery-3.2.1.min.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="./www/JS/CommonScripts/firebase.js"></script>
+        <script src="./www/JS/PageScripts/forum.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $('#sidebarCollapse').on('click', function () {
+                    $('#sidebar').toggleClass('active');
+                });
+            });
+        </script>
+    </body>
+</html>
+
+
